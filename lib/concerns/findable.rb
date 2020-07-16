@@ -1,4 +1,4 @@
 module Findable
   def find_by_name(name)
-    @name = name
+    @@artists.detect{|a| a.name == name}
   end
